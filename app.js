@@ -16,6 +16,9 @@ const game = {
     { name: "rare candy", quantity: 99 },
   ],
 };
+console.dir(pokemon, { maxArrayLength: null });
+console.log(game);
+console.log(game.items);
 
 /*
 Exercise 3
@@ -70,6 +73,7 @@ game.gyms.forEach((gym) => {
     gym.completed = true;
   }
 });
+console.log(game.gyms);
 
 /*
 Exercise 7
@@ -112,6 +116,7 @@ for (let i = 0; i < party.length; i++) {
     }
   }
 }
+console.log(game.party);
 
 /*
 Exercise 8
@@ -236,6 +241,7 @@ game.gymStatus = gymStatus;
 
 game.gymStatus();
 
+
 /*
 Exercise 14
 1. Add a `partyCount` method to `game` that counts the number of Pokémon in your party.
@@ -252,6 +258,7 @@ function partyCount() {
   return this.party.length;
 }
 game.partyCount = partyCount;
+console.log(game.partyCount());
 
 /*
 Exercise 15
@@ -266,7 +273,7 @@ game.gyms.forEach((gym) => {
     gym.completed = true;
   }
 });
-
+console.log(game.gyms)
 /*
 Exercise 16
 1. Log the entire `game` object to the console. Take a moment to review the changes you've made throughout the exercises.
@@ -277,10 +284,9 @@ Solve Exercise 16 here:
 
 console.log(game);
 
-console.log(game.gymStatus());
-console.log(game.partyCount());
-console.log(game.items);
-console.log(game.gyms);
-console.log(game.party);
-console.dir(pokemon, { maxArrayLength: null });
-console.log(game);
+
+
+
+
+
+
